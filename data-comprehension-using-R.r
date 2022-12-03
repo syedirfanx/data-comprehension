@@ -39,3 +39,31 @@ getmode <- function(v) {
 }
 
 getmode(Nile)
+
+min(Nile)
+max(Nile)
+
+range = max(Nile,na.rm=TRUE)-min(Nile,na.rm=TRUE)
+range
+
+IQR(Nile)
+
+quantile(Nile)
+
+hist(Nile, 
+     main = "HISTOGRAM OF NILE", 
+     xlab = "NILE", 
+     ylab = "FREQUENCY", 
+     col = "darkmagenta")
+
+qqnorm(Nile)
+qqline(Nile, col="red", lwd = 2) #Normally distributed
+qqplot(Nile)
+table(Nile)
+
+plot(Nile, xlab="NILE", ylab="FREQUENCY", main="NILE PLOT", type= "b")
+plot(Nile, xlab="NILE", ylab="FREQUENCY", main="NILE PLOT", type= "l")
+plot(Nile, xlab="NILE", ylab="FREQUENCY", main="NILE PLOT", type= "o")
+plot(Nile, xlab="NILE", ylab="FREQUENCY", main="NILE PLOT", type= "h")
+plot(Nile, xlab="NILE", ylab="FREQUENCY", main="NILE PLOT", type= "p")
+plot(Nile, xlab="NILE", ylab="FREQUENCY", main="NILE PLOT", type= "s")
